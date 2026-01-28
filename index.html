@@ -42,7 +42,7 @@
   <script>
     async function loadLicense() {
       try {
-        const response = await fetch('./licence.md');
+        const response = await fetch('./license.md');
         if (!response.ok) throw new Error('Não foi possível carregar a licença.');
         const markdown = await response.text();
         document.getElementById('content').innerHTML = marked.parse(markdown);
