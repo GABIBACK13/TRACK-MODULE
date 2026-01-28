@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licença do Módulo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      max-width: 800px;
+    }
+    h1, h2, h3, h4 {
+      color: #333;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Licença de Uso – Módulo de Transcrição de Áudio</h1>
+  <div id="content">Carregando licença...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    async function loadLicense() {
+      try {
+        const response = await fetch('./licence.md');
+        if (!response.ok) throw new Error('Não foi possível carregar a licença.');
+        const markdown = await response.text();
+        document.getElementById('content').innerHTML = marked.parse(markdown);
+      } catch (err) {
+        document.getElementById('content').innerText = err.message;
+      }
+    }
+
+    loadLicense();
+  </script>
+
+</body>
+</html>
