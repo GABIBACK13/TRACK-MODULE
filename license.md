@@ -18,8 +18,8 @@
 #### 6. Conformidade e Uso Indevido
   Ao utilizar este módulo, o usuário compromete-se a respeitar integralmente os termos aqui estabelecidos.
   O descumprimento de quaisquer cláusulas poderá resultar em:
-  Revogação imediata do direito de uso
-  Adoção de medidas administrativas ou legais cabíveis
+  - Revogação imediata do direito de uso
+  - Adoção de medidas administrativas ou legais cabíveis
 
 #### 7. Aceitação dos Termos
   O uso do módulo implica na aceitação integral e irrestrita desta Licença.
